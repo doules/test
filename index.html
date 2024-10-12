@@ -34,7 +34,7 @@
         let model;
         loader.load('https://drive.google.com/uc?id=1J_PsmzsOU7-UXn239AGWuOelLXio0Q91', (gltf) => {
             model = gltf.scene;
-            model.scale.set(3, 3, 3); // Увеличиваем масштаб модели
+            model.scale.set(0.1, 0.1, 0.1); // Увеличиваем масштаб модели
             scene.add(model);
         }, undefined, (error) => {
             console.error('Ошибка загрузки модели:', error);
