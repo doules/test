@@ -34,14 +34,14 @@
         let model;
         loader.load('https://drive.google.com/uc?id=1J_PsmzsOU7-UXn239AGWuOelLXio0Q91', (gltf) => {
             model = gltf.scene;
-            model.scale.set(10, 10, 10); // Увеличиваем масштаб модели
+            model.scale.set(0.001, 0.001, 0.001); // Увеличиваем масштаб модели
             scene.add(model);
         }, undefined, (error) => {
             console.error('Ошибка загрузки модели:', error);
         });
 
         // Позиция камеры
-        camera.position.set(0, 0, 10); // Увеличиваем расстояние до модели
+        camera.position.set(0, 0, 20); // Увеличиваем расстояние до модели
 
         function createStars() {
             const starGeometry = new THREE.BufferGeometry();
